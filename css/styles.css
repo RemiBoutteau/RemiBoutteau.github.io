@@ -1,0 +1,138 @@
+body{
+    font-size: 16px;
+    color: black;
+    background-color: whitesmoke;
+    font-family: 'Oxygen', sans-serif;
+    min-height: 100%;
+    margin: 0;
+    padding: 10px 10px 60px 10px;
+    position: relative;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+
+html{height:100%;}
+
+
+#contenu{
+    max-width:1280px;
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
+    padding-bottom: 0px;
+ }
+
+footer{
+    background-color: #212529; 
+    /*background-color: #343a40;*/
+    text-align:center;
+    position: absolute; 
+    color: whitesmoke;
+    bottom: 0;
+    right: 0;
+    left:0;    
+    height: 50px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+
+h1{
+    color: #334385;
+    text-align: center;
+}
+
+h2{
+    color: #334385;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+h3{
+    color: #334385;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+
+p{
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.top-content{
+    margin-top: 25px;
+
+}
+
+.project_description{
+    text-align: justify;
+}
+
+
+#contenu>ul>li{
+    margin-bottom: 10px;
+}
+
+#myphoto{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    vertical-align: middle;
+}
+
+#biographie{
+    text-align: justify;
+}
+
+
+
+#researchprofile{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#motscles {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 10px;
+    
+}
+
+.project-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#newsAccueil{
+    margin-left: 10px;
+    margin-right: 0px;
+    text-align: justify;
+}
+
+
+/*Pour supprimer le soulignement des liens*/
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+
+
+/****************** Extra small devices ****************/
+@media(max-width: 600px){
+    footer{
+       height: 100px;
+    }
+    #contenu{
+        padding-bottom: 100px;
+     }    
+}

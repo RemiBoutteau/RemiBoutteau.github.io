@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="author" content="Rémi BOUTTEAU">
+	  <meta name="theme-color" content="#563d7c">
+    <meta name="description" content="Rémi Boutteau Publications">
+    <meta name="keywords" content="Rémi Boutteau, Professeur des Universités, LITIS, Université Rouen Normandie, Computer Vision, Autonomous Vehicle, Vehicle localization, Publications">
+    <meta name="copyright" content="Rémi Boutteau"/>
+
+
+    <title>Rémi Boutteau</title>
+     <!-- Inclusion des CSS et APIs externes -->
+     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+
+
+  </head>
+
+
+<body>
+
+  
+  <!-- Inclusion du Header -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center align-items-center">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav justify-content-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="cv.html">Curriculum Vitae</a>   
+            <a class="nav-link" href="phdStudents.html">PhD Students</a>   
+            <a class="nav-link" aria-current="page"  href="publications.html">Publications</a>   
+            <a class="nav-link" href="research.html">Research Projects</a>   
+            <a class="nav-link" href="reviewing.html">Reviewing</a>   
+            <a class="nav-link" href="teaching.html">Teaching</a>      
+            <a class="nav-link" href="contact.html">Contact</a>   
+          </div>
+        </div>
+      </div>
+    </nav>  
+    </header>
+  
+ 
+  
+  <main class="site-content" id="contenu">
+
+    <h1>Publications</h1>
+
+    <h2>Peer-Reviewed International Journals</h2>
+
+      
+    <h2>Peer-Reviewed International Conferences</h2>
+ 
+
+    <h2>Book chapters</h2>
+ 
+
+    <h2>Peer-Reviewed National Conferences</h2>
+ 
+       
+    <h2>Thesis</h2>
+
+  </main> <!-- End of the main content -->
+  
+   
+ <!-- Pour mettre le premier auteur en gras --> 
+ <script> 
+  function replaceAll(recherche, remplacement, chaineAModifier)
+  {
+      //On échappe les éventuels caractères spéciaux de la chaîne
+      var chaine = chaineAModifier;
+      //On effectue le remplacement dans la chaîne
+      var re = new RegExp(recherche, 'g');
+      return chaine.replace(re, remplacement);
+  }
+  
+  function first_author_bold(){ 
+    var t=document.getElementById('contenu');
+    var newc = replaceAll('Boutteau, R.', '<strong>Boutteau, R.</strong>', t.innerHTML);
+    t.innerHTML = newc; 
+  }
+    
+  first_author_bold();
+</script>
+  
+<!-- Inclusion du footer -->
+<footer class="panel-footer">
+  <div class="container-fluid">
+      <div class="row">
+          <div id="blank" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">  
+              <a href="https://www.univ-rouen.fr" target="_blank"><img src="images/URN.png" alt="Université de Rouen Normandie" height="30"></a>
+              <a href="https://www.litislab.fr" target="_blank"><img src="images/LITIS.png" alt="LITIS" height="30"></a>
+              <a href="http://www.normandie-univ.fr" target="_blank"><img src="images/COMUE.jpg" alt="COMUE Normandie Université" height="30"></a>
+              <a href="http://www.normastic.fr" target="_blank"><img src="images/normastic.png" alt="Normastic" height="30"></a>
+          </div>
+          <div id="copyyright" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              &copy; 2025 Rémi Boutteau
+          </div>
+          <div id="socialnetworks" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+              <a href="https://www.linkedin.com/in/r%C3%A9mi-boutteau-39373340/?locale=en_US" target="_blank"><img src="images/linkedin.png" alt="Linkedin Rémi Boutteau" width="30"></a>
+              <a href="https://orcid.org/0000-0003-1078-5043" target="_blank"><img src="images/orcid.png" alt="ORCID Rémi Boutteau" width="30"></a>
+              <a href="https://www.researchgate.net/profile/Remi_Boutteau" target="_blank"><img src="images/researchgate.png" alt="ResearchGate Rémi Boutteau" width="30"></a>
+              <a href="https://scholar.google.com/citations?hl=fr&user=U-SrcPkAAAAJ" target="_blank"><img src="images/googlescholar.png" alt="Google Scholar Rémi Boutteau" width="30"></a>
+          </div>    
+      </div>
+  </div> 
+</footer>
+ <!-- Inclusion des scripts  -->
+<!-- Bootsrap 5 bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- jQquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ 
+ </body>
+</html>
