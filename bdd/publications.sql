@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 11 juil. 2025 à 14:09
+-- Généré le : lun. 22 sep. 2025 à 07:22
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -54,6 +54,7 @@ INSERT INTO `articles_conferences_internationales` (`id_publication`, `id_confer
 (34, 'IROS'),
 (46, 'IROS'),
 (58, 'IROS'),
+(79, 'IROS'),
 (29, 'ISDG'),
 (36, 'ISDG'),
 (31, 'ITSC'),
@@ -336,7 +337,8 @@ INSERT INTO `publications` (`id_publication`, `titre`, `auteurs`, `annee`, `type
 (75, 'Étude des méthodes d\'estimation du mouvement dans des séquences d\'images prises par une caméra embarquée sur un véhicule', 'Boutteau, R.', '2006', 'THESIS', 'Rapport de stage Master 2 (Master Thesis), Université des Sciences et Technologies de Lille (USTL)', '', '', ''),
 (76, 'Étude des méthodes d\'estimation du mouvement dans des séquences d\'images prises par une caméra embarquée sur un véhicule', 'Boutteau, R.', '2006', 'THESIS', 'Projet de Fin d\'Etudes (Graduation Project), Ecole des Mines de Douai', '', '', ''),
 (77, 'Reconstruction tridimensionnelle de l\'environnement d\'un robot mobile, à partir d\'informations de vision omnidirectionnelle', 'Boutteau, R.', '2010', 'THESIS', 'Thèse de doctorat (PhD Thesis), Université de Rouen Normandie', 'https://tel.archives-ouvertes.fr/tel-00711922v2/document', 'https://hal.archives-ouvertes.fr/tel-00711922', ''),
-(78, 'Contribution à la localisation pour le véhicule autonome', 'Boutteau, R.', '2018', 'THESIS', 'Habilitation à Diriger des Recherches (French Habilitation to supervise research), Université de Rouen Normandie', 'https://hal.archives-ouvertes.fr/tel-01963712/document', 'https://tel.archives-ouvertes.fr/tel-01963712/', '');
+(78, 'Contribution à la localisation pour le véhicule autonome', 'Boutteau, R.', '2018', 'THESIS', 'Habilitation à Diriger des Recherches (French Habilitation to supervise research), Université de Rouen Normandie', 'https://hal.archives-ouvertes.fr/tel-01963712/document', 'https://tel.archives-ouvertes.fr/tel-01963712/', ''),
+(79, 'SPECTRA: Synchronized Stereo Event-Camera Driving Dataset for Diverse Perception Tasks', 'Dachraoui, J., El Moudni, A., Planterose, E., Kramm, S., Morbidi, F., Boutteau, R.', '2025', 'CONFINT', 'Workshop NeuRobots', '', '', '');
 
 --
 -- Index pour les tables déchargées
@@ -395,7 +397,7 @@ ALTER TABLE `publications`
 -- AUTO_INCREMENT pour la table `publications`
 --
 ALTER TABLE `publications`
-  MODIFY `id_publication` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `id_publication` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- Contraintes pour les tables déchargées
