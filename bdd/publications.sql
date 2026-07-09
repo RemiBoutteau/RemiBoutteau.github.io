@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 22 sep. 2025 à 07:22
+-- Généré le : mar. 12 mai 2026 à 13:56
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -64,6 +64,8 @@ INSERT INTO `articles_conferences_internationales` (`id_publication`, `id_confer
 (56, 'ITSC'),
 (32, 'IV'),
 (35, 'IV'),
+(80, 'IV'),
+(81, 'IV'),
 (4, 'ROSE'),
 (53, 'SSD'),
 (40, 'VISAPP'),
@@ -95,10 +97,13 @@ INSERT INTO `articles_conferences_nationales` (`id_publication`, `id_conference_
 (71, 'ORASIS'),
 (72, 'ORASIS'),
 (73, 'ORASIS'),
+(82, 'PFIA'),
+(83, 'PFIA'),
 (62, 'RFIA'),
 (63, 'RFIA'),
 (67, 'RFIA'),
 (68, 'RFIA'),
+(84, 'SAGIP'),
 (70, 'URSI');
 
 -- --------------------------------------------------------
@@ -199,7 +204,9 @@ CREATE TABLE `conferences_nationales` (
 INSERT INTO `conferences_nationales` (`id_conference_nat`, `nom`) VALUES
 ('GRETSI', 'Colloque GRETSI (GRETSI)'),
 ('ORASIS', 'ORASIS, journées francophones des jeunes chercheurs en vision par ordinateur (ORASIS)'),
+('PFIA', 'Plate-Frome Intelligence Artificielle (PFIA)'),
 ('RFIA', 'Reconnaissance de Formes et Intelligence Artificielle (RFIA)'),
+('SAGIP', 'Congrès Annuel de la SAGIP (Société d\'Automatique, de Génie Industriel et de productique)'),
 ('URSI', 'Journées scientifiques d\'URSI-France (URSI)');
 
 -- --------------------------------------------------------
@@ -287,7 +294,7 @@ INSERT INTO `publications` (`id_publication`, `titre`, `auteurs`, `annee`, `type
 (25, 'Road and Railway Smart Mobility: A High-definition Ground Truth Hybrid Dataset', 'Khemmar, R., Mauri, A., Dulompont, C., Gajula, j., Vauchey, V., Haddad, M., Boutteau, R.', '2022', 'JOURINT', '22(10), 3922', 'https://www.mdpi.com/1424-8220/22/10/3922/pdf?version=1653210266', 'https://hal.archives-ouvertes.fr/hal-03685898', 'https://www.mdpi.com/1424-8220/22/10/3922'),
 (26, 'Improving the Efficiency of 3D Monocular Object Detection and Tracking for Road and Railway Smart Mobility', 'Evain, A., Mauri, A., Garnier, F., Kounouho, M., Khemmar, R., Haddad, M., Boutteau, R., Breteche, S., Ahmedali, S.', '2023', 'JOURINT', '23(6), 3197', 'https://www.mdpi.com/1424-8220/23/6/3197/pdf?version=1679017440', 'https://hal.science/hal-04097585', 'https://www.mdpi.com/1424-8220/23/6/3197'),
 (27, 'Multi-Agent Cooperative Camera-Based Semantic Grid Generation', 'Caillot, A., Ouerghi, S., Dupuis, Y., Vasseur, P., Boutteau, R.', '2024', 'JOURINT', '110, 64', 'https://link.springer.com/content/pdf/10.1007/s10846-024-02093-4.pdf', 'https://hal.science/hal-04554636', 'https://link.springer.com/article/10.1007/s10846-024-02093-4?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240422&utm_content=10.1007/s10846-024-02093-4'),
-(28, 'Overview on evidential fusion approaches in the context of collaborative perception for occupancy modeling', 'Ben Ayed, S., Dachraoui, J., Laghmara, H., Boutteau, R.', '2025', 'JOURINT', '55, 822', '', 'https://hal.science/hal-05133177v1', 'https://link.springer.com/article/10.1007/s10489-025-06670-4'),
+(28, 'Overview on evidential fusion approaches in the context of collaborative perception for occupancy modeling', 'Ben Ayed, S., Dachraoui, J., Laghmara, H., Boutteau, R.', '2025', 'JOURINT', '55, 822', 'https://hal.science/hal-05133177v1/file/ArticleScopes.pdf', 'https://hal.science/hal-05133177v1', 'https://link.springer.com/article/10.1007/s10489-025-06670-4'),
 (29, 'Demonstration of the Salvo Enhanced No Escape Zone Concept using ground mobile robots', 'Savatier, X., Boutteau, R., Merriaux, P., Le Ménec, S.', '2012', 'CONFINT', 'Byšice, Czech Republic', '', '', 'https://hal.archives-ouvertes.fr/hal-01713897'),
 (30, 'A dynamic programming algorithm applied to omnidirectional vision for dense 3D reconstruction', 'Boutteau, R., Savatier, X., Ertaud, J.Y.', '2013', 'CONFINT', 'Naha, Okinawa, Japan', 'https://hal.archives-ouvertes.fr/hal-01710409/document', 'https://hal.archives-ouvertes.fr/hal-01710409', 'https://ieeexplore.ieee.org/document/6778466'),
 (31, 'Road-line detection and 3D reconstruction using fisheye cameras', 'Boutteau, R., Savatier, X., Bonardi, F., Ertaud, J.Y.', '2013', 'CONFINT', 'The Hague, The Netherlands', 'https://hal.archives-ouvertes.fr/hal-01710406/document', 'https://hal.archives-ouvertes.fr/hal-01710406', 'https://ieeexplore.ieee.org/document/6728376'),
@@ -316,9 +323,9 @@ INSERT INTO `publications` (`id_publication`, `titre`, `auteurs`, `annee`, `type
 (54, 'Multi-Agent Cooperative Camera-Based Evidential Occupancy Grid Generation', 'Caillot, A., Ouerghi, S., Vasseur, P., Dupuis, Y., Boutteau, R.', '2022', 'CONFINT', 'Macau, China', 'https://hal.science/hal-03870700v1/document', 'https://hal.science/hal-03870700v1', 'https://ieeexplore.ieee.org/document/9921855'),
 (55, 'RGB-Event Fusion for Moving Object Detection in Autonomous Driving', 'Zhou, Z., Wu, Z., Boutteau, R., Yang, F., Demonceaux, C., Ginhac, D.', '2023', 'CONFINT', 'London, United Kingdom', 'https://arxiv.org/pdf/2209.08323', 'https://ieeexplore.ieee.org/document/10161563', 'https://hal-insep.archives-ouvertes.fr/VIBOT/hal-04048853v1'),
 (56, 'An Event-based Stereo 3D Mapping and Tracking Pipeline for Autonomous Vehicles', 'El Moudni, A., Morbidi, F., Kramm, S., Boutteau, R.', '2023', 'CONFINT', 'Bilbao, Spain', 'https://hal.science/hal-04211637v1/file/ITSC2023.pdf', 'https://hal.science/hal-04211637', 'https://ieeexplore.ieee.org/document/10422404'),
-(57, 'Industrial Object Detection: Leveraging Synthetic Data for Training Deep Learning Models', 'Ouarab, S., Boutteau, R., Roméo, K., Lecomte, C., Laignel, A., Ragot, N., Duval, F.', '2024', 'CONFINT', 'Nice, France', '', 'https://hal.science/hal-04389189/', 'https://link.springer.com/chapter/10.1007/978-3-031-58113-7_17'),
+(57, 'Industrial Object Detection: Leveraging Synthetic Data for Training Deep Learning Models', 'Ouarab, S., Boutteau, R., Roméo, K., Lecomte, C., Laignel, A., Ragot, N., Duval, F.', '2024', 'CONFINT', 'Nice, France', 'https://hal.science/hal-04389189v1/file/paper_vdef.pdf', 'https://hal.science/hal-04389189/', 'https://link.springer.com/chapter/10.1007/978-3-031-58113-7_17'),
 (58, 'Event-Free Moving Object Segmentation from Moving Ego Vehicle', 'Zhou, Z., Wu, Z., Danda, D.P., Boutteau, R., Yang, F., Van Gool, L., Timofte, R., Ginhac, D.', '2024', 'CONFINT', 'Abu Dhabi, United Arab Emirates', 'https://arxiv.org/pdf/2305.00126', 'https://hal.science/hal-04763949', 'https://ieeexplore.ieee.org/document/10801383'),
-(59, 'Steering Prediction via a Multi-Sensor System for Autonomous Racing', 'Zhou, Z., Wu, Z., Bolli, F., Boutteau, R., Yang, F., Timofte, R., Ginhac, D., Delbruck, T.', '2025', 'CONFINT', 'Atlanta, USA', 'https://hal.science/hal-04915921/document', 'https://hal.science/hal-04915921', ''),
+(59, 'Steering Prediction via a Multi-Sensor System for Autonomous Racing', 'Zhou, Z., Wu, Z., Bolli, F., Boutteau, R., Yang, F., Timofte, R., Ginhac, D., Delbruck, T.', '2025', 'CONFINT', 'Atlanta, USA', 'https://hal.science/hal-04915921/document', 'https://hal.science/hal-04915921', 'https://ieeexplore.ieee.org/document/11128135'),
 (60, 'CUDA-accelerated Feature-based Egomotion Estimation', 'Ouerghi, S., Boutteau, R., Savatier, X., Tlili, F.', '2019', 'CHAPT', 'Computer Vision, Imaging and Computer Graphics – Theory and Applications, 12th International Joint Conference, VISIGRAPP 2017, Porto, Portugal, February 27 – March 1, 2017, Revised Selected Papers, Communications in Computer and Information Science, Springer', 'https://hal.archives-ouvertes.fr/hal-02001134/document', 'https://hal.archives-ouvertes.fr/hal-02001134', 'https://www.springer.com/fr/book/9783030122089?utm_campaign=bookpage_about_buyonpublisherssite&utm_medium=referral&utm_source=springerlink'),
 (61, 'Chapter 1 : A 3D Omnidirectional Sensor For Mobile Robot Applications', 'Boutteau, R., Savatier, X., Ertaud, J. Y., Mazari, B.', '2010', 'CHAPT', 'In-Tech Book. ISBN : 978-953-307-076-6', 'https://hal.archives-ouvertes.fr/hal-01713170/document', 'https://hal.archives-ouvertes.fr/hal-01713170', 'https://www.intechopen.com/books/mobile-robots-navigation/a-3d-omnidirectional-sensor-for-mobile-robot-applications'),
 (62, 'Estimation à l\'échelle du mouvement d\'un réseau multi-caméras non synchronisées', 'Mhiri, R., Vasseur, P., Mousset, S., Boutteau, R., Bensrhair, A.', '2014', 'CONFNAT', 'Rouen, France', 'https://hal.archives-ouvertes.fr/hal-00989061/document', 'https://hal.archives-ouvertes.fr/hal-00989061', ''),
@@ -338,7 +345,12 @@ INSERT INTO `publications` (`id_publication`, `titre`, `auteurs`, `annee`, `type
 (76, 'Étude des méthodes d\'estimation du mouvement dans des séquences d\'images prises par une caméra embarquée sur un véhicule', 'Boutteau, R.', '2006', 'THESIS', 'Projet de Fin d\'Etudes (Graduation Project), Ecole des Mines de Douai', '', '', ''),
 (77, 'Reconstruction tridimensionnelle de l\'environnement d\'un robot mobile, à partir d\'informations de vision omnidirectionnelle', 'Boutteau, R.', '2010', 'THESIS', 'Thèse de doctorat (PhD Thesis), Université de Rouen Normandie', 'https://tel.archives-ouvertes.fr/tel-00711922v2/document', 'https://hal.archives-ouvertes.fr/tel-00711922', ''),
 (78, 'Contribution à la localisation pour le véhicule autonome', 'Boutteau, R.', '2018', 'THESIS', 'Habilitation à Diriger des Recherches (French Habilitation to supervise research), Université de Rouen Normandie', 'https://hal.archives-ouvertes.fr/tel-01963712/document', 'https://tel.archives-ouvertes.fr/tel-01963712/', ''),
-(79, 'SPECTRA: Synchronized Stereo Event-Camera Driving Dataset for Diverse Perception Tasks', 'Dachraoui, J., El Moudni, A., Planterose, E., Kramm, S., Morbidi, F., Boutteau, R.', '2025', 'CONFINT', 'Workshop NeuRobots', '', '', '');
+(79, 'SPECTRA: Synchronized Stereo Event-Camera Driving Dataset for Diverse Perception Tasks', 'Dachraoui, J., El Moudni, A., Planterose, E., Kramm, S., Morbidi, F., Boutteau, R.', '2025', 'CONFINT', 'Workshop NeuRobots', 'hal.science/hal-05385180v1/file/Spectra Neurobots.pdf', 'https://hal.science/hal-05385180v1/file/Spectra%20Neurobots.pdf', 'https://openreview.net/pdf?id=mqCUxEsfsI'),
+(80, 'PermaMap: Semantic-Temporal LiDAR Map Updates for Long-Term Visual Localization', 'Dachraoui, J., Laghmara, H., Boutteau, R.', '2026', 'CONFINT', 'Detroit, USA', '', '', ''),
+(81, 'Reliability-Aware Fusion for Semantic Segmentation under Sensor Degradation and Failures', 'Deregnaucourt, L., Benamirouche, A., Negash Geletu, M., Laghmara, H., Boutteau, R., Lauffenburger, J.P. ', '2026', 'CONFINT', 'Detroit, USA', '', '', ''),
+(82, 'Fusion multimodale tenant compte de la fiabilité pour la perception robuste des systèmes autonomes', 'Benamirouche, A., Deregnaucourt, L., Negash Geletu, M., Laghmara, H., Boutteau, R., Lauffenburger, J.P.', '2026', 'CONFNAT', 'Journée Incertitude et IA, Arras, France', '', '', ''),
+(83, 'Fusion multimodale adaptative pour l’aide à la navigation du véhicule intelligent en conditions météorologiques dégradées', 'Barbarit-Gaboriau, S., Laghmara, H., Boutteau, R., Ainouz, S.', '2026', 'CONFNAT', 'Journée Incertitude et IA, Arras, France', '', '', ''),
+(84, 'Fusion multimodale tenant compte de la fiabilité pour la segmentation sémantique en présence de dégradations et de défaillances des capteurs', 'Benamirouche, A., Deregnaucourt, L., Negas Geletu, M., Laghmara, H., Boutteau, R., Lauffenburger, J.P.', '2026', 'CONFNAT', 'Bordeaux, France', '', '', '');
 
 --
 -- Index pour les tables déchargées
@@ -397,7 +409,7 @@ ALTER TABLE `publications`
 -- AUTO_INCREMENT pour la table `publications`
 --
 ALTER TABLE `publications`
-  MODIFY `id_publication` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
+  MODIFY `id_publication` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
 
 --
 -- Contraintes pour les tables déchargées
