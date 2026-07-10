@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 12 mai 2026 à 13:56
+-- Généré le : jeu. 09 juil. 2026 à 09:14
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -99,6 +99,7 @@ INSERT INTO `articles_conferences_nationales` (`id_publication`, `id_conference_
 (73, 'ORASIS'),
 (82, 'PFIA'),
 (83, 'PFIA'),
+(85, 'PFIA'),
 (62, 'RFIA'),
 (63, 'RFIA'),
 (67, 'RFIA'),
@@ -204,7 +205,7 @@ CREATE TABLE `conferences_nationales` (
 INSERT INTO `conferences_nationales` (`id_conference_nat`, `nom`) VALUES
 ('GRETSI', 'Colloque GRETSI (GRETSI)'),
 ('ORASIS', 'ORASIS, journées francophones des jeunes chercheurs en vision par ordinateur (ORASIS)'),
-('PFIA', 'Plate-Frome Intelligence Artificielle (PFIA)'),
+('PFIA', 'Plate-Forme Intelligence Artificielle (PFIA)'),
 ('RFIA', 'Reconnaissance de Formes et Intelligence Artificielle (RFIA)'),
 ('SAGIP', 'Congrès Annuel de la SAGIP (Société d\'Automatique, de Génie Industriel et de productique)'),
 ('URSI', 'Journées scientifiques d\'URSI-France (URSI)');
@@ -345,12 +346,13 @@ INSERT INTO `publications` (`id_publication`, `titre`, `auteurs`, `annee`, `type
 (76, 'Étude des méthodes d\'estimation du mouvement dans des séquences d\'images prises par une caméra embarquée sur un véhicule', 'Boutteau, R.', '2006', 'THESIS', 'Projet de Fin d\'Etudes (Graduation Project), Ecole des Mines de Douai', '', '', ''),
 (77, 'Reconstruction tridimensionnelle de l\'environnement d\'un robot mobile, à partir d\'informations de vision omnidirectionnelle', 'Boutteau, R.', '2010', 'THESIS', 'Thèse de doctorat (PhD Thesis), Université de Rouen Normandie', 'https://tel.archives-ouvertes.fr/tel-00711922v2/document', 'https://hal.archives-ouvertes.fr/tel-00711922', ''),
 (78, 'Contribution à la localisation pour le véhicule autonome', 'Boutteau, R.', '2018', 'THESIS', 'Habilitation à Diriger des Recherches (French Habilitation to supervise research), Université de Rouen Normandie', 'https://hal.archives-ouvertes.fr/tel-01963712/document', 'https://tel.archives-ouvertes.fr/tel-01963712/', ''),
-(79, 'SPECTRA: Synchronized Stereo Event-Camera Driving Dataset for Diverse Perception Tasks', 'Dachraoui, J., El Moudni, A., Planterose, E., Kramm, S., Morbidi, F., Boutteau, R.', '2025', 'CONFINT', 'Workshop NeuRobots', 'hal.science/hal-05385180v1/file/Spectra Neurobots.pdf', 'https://hal.science/hal-05385180v1/file/Spectra%20Neurobots.pdf', 'https://openreview.net/pdf?id=mqCUxEsfsI'),
+(79, 'SPECTRA: Synchronized Stereo Event-Camera Driving Dataset for Diverse Perception Tasks', 'Dachraoui, J., El Moudni, A., Planterose, E., Kramm, S., Morbidi, F., Boutteau, R.', '2025', 'CONFINT', 'Workshop NeuRobots', 'https://hal.science/hal-05385180v1/file/Spectra%20Neurobots.pdf', 'https://hal.science/hal-05385180v1/', 'https://openreview.net/pdf?id=mqCUxEsfsI'),
 (80, 'PermaMap: Semantic-Temporal LiDAR Map Updates for Long-Term Visual Localization', 'Dachraoui, J., Laghmara, H., Boutteau, R.', '2026', 'CONFINT', 'Detroit, USA', '', '', ''),
 (81, 'Reliability-Aware Fusion for Semantic Segmentation under Sensor Degradation and Failures', 'Deregnaucourt, L., Benamirouche, A., Negash Geletu, M., Laghmara, H., Boutteau, R., Lauffenburger, J.P. ', '2026', 'CONFINT', 'Detroit, USA', '', '', ''),
 (82, 'Fusion multimodale tenant compte de la fiabilité pour la perception robuste des systèmes autonomes', 'Benamirouche, A., Deregnaucourt, L., Negash Geletu, M., Laghmara, H., Boutteau, R., Lauffenburger, J.P.', '2026', 'CONFNAT', 'Journée Incertitude et IA, Arras, France', '', '', ''),
 (83, 'Fusion multimodale adaptative pour l’aide à la navigation du véhicule intelligent en conditions météorologiques dégradées', 'Barbarit-Gaboriau, S., Laghmara, H., Boutteau, R., Ainouz, S.', '2026', 'CONFNAT', 'Journée Incertitude et IA, Arras, France', '', '', ''),
-(84, 'Fusion multimodale tenant compte de la fiabilité pour la segmentation sémantique en présence de dégradations et de défaillances des capteurs', 'Benamirouche, A., Deregnaucourt, L., Negas Geletu, M., Laghmara, H., Boutteau, R., Lauffenburger, J.P.', '2026', 'CONFNAT', 'Bordeaux, France', '', '', '');
+(84, 'Fusion multimodale tenant compte de la fiabilité pour la segmentation sémantique en présence de dégradations et de défaillances des capteurs', 'Benamirouche, A., Deregnaucourt, L., Negas Geletu, M., Laghmara, H., Boutteau, R., Lauffenburger, J.P.', '2026', 'CONFNAT', 'Bordeaux, France', '', '', ''),
+(85, 'PermaMap : Mise à jour sémantique et temporelle de cartes LiDAR\r\npour la localisation visuelle à long terme', 'Dachraoui, J., Laghmara, H., Boutteau, R.', '2026', 'CONFNAT', 'Journée Robotique et IA, Arras, France', '', '', '');
 
 --
 -- Index pour les tables déchargées
@@ -409,7 +411,7 @@ ALTER TABLE `publications`
 -- AUTO_INCREMENT pour la table `publications`
 --
 ALTER TABLE `publications`
-  MODIFY `id_publication` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
+  MODIFY `id_publication` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 
 --
 -- Contraintes pour les tables déchargées
