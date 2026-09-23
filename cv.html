@@ -34,6 +34,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cv.css">
 
   </head>
 
@@ -70,37 +71,85 @@
  
  
 <main class="site-content" id="contenu">
-    
-<h1>Curriculum Vitae</h1>
-<p> 
-  Here is a summary of my CV, for more details see my <a href="https://www.linkedin.com/in/r%C3%A9mi-boutteau-39373340/?locale=en_US" target="_blank">LinkedIn profile</a>.
-</p>
-<h2>Professional experience</h2>
-  <ul>
-    <li>Since 2020 : Full Professor at University of Rouen Normandy.
-        <ul>
-            <li>Since 2023 : STI Team Leader</li>
-            <li>Since 2022 : Co-responsible for the PVAC (Plateforme Véhicule Autonome et Connecté) research platform</li>
-            <li>Since 2021 : Co-responsible for the <a href="https://www.litislab.fr/production/PERMIS" target="_blank">PERMIS (Plateforme Expérimentale en Robotique Mobile, Intelligente et Systèmes)</a> research platform</li>
-            <li>Since 2020 : Director of Studies for the MMI (Métiers du Multimédia et de l'Internet) BUT1 (Bachelor Universitaire de Technologie)</li>
-        </ul>
+<div class="cv">
+
+  <section class="cv-hero">
+    <h1>Curriculum Vitae</h1>
+    <p>Here is a summary of my CV. For more details, see my LinkedIn profile.</p>
+    <a class="cv-btn" href="https://www.linkedin.com/in/r%C3%A9mi-boutteau-39373340/?locale=en_US" target="_blank" rel="noopener"><img src="images/linkedin.png" alt="">LinkedIn profile</a>
+  </section>
+
+  <section class="cv-section">
+    <h2>Professional experience</h2>
+    <ol class="timeline">
+      <li class="current">
+        <div class="cv-card">
+          <span class="cv-date">Since 2020</span>
+          <h3>Full Professor</h3>
+          <p class="cv-org">University of Rouen Normandy</p>
+          <ul class="cv-roles">
+            <li><span class="cv-year">Since 2023</span><span>STI Team Leader</span></li>
+            <li><span class="cv-year">Since 2022</span><span>Co-responsible for the PVAC (Plateforme Véhicule Autonome et Connecté) research platform</span></li>
+            <li><span class="cv-year">Since 2021</span><span>Co-responsible for the <a href="https://www.litislab.fr/production/PERMIS" target="_blank" rel="noopener">PERMIS (Plateforme Expérimentale en Robotique Mobile, Intelligente et Systèmes)</a> research platform</span></li>
+            <li><span class="cv-year">Since 2020</span><span>Director of Studies for the MMI (Métiers du Multimédia et de l'Internet) BUT1 (Bachelor Universitaire de Technologie)</span></li>
+          </ul>
+        </div>
       </li>
-    <li>2015 - 2020 : In charge of the major "Embedded Systems Engineering - Autonomous Vehicles" at ESIGELEC.</li>
-    <li>2009 - 2020 : Associate Professor at ESIGELEC Engineering School and Researcher at IRSEEM (Embedded Electronic Systems Research Institute).</li>
-     <ul>
-            <li>2015 - 2020 : In charge of the major "Embedded Systems Engineering - Autonomous Vehicles" at ESIGELEC.</li>
-     </ul>
-    <li>2006 - 2009 : Research Engineer at IPSIS (IT Link Group).</li>
-  </ul>
+      <li>
+        <div class="cv-card">
+          <span class="cv-date">2009 &ndash; 2020</span>
+          <h3>Associate Professor &amp; Researcher</h3>
+          <p class="cv-org">ESIGELEC Engineering School &middot; IRSEEM (Embedded Electronic Systems Research Institute)</p>
+          <ul class="cv-roles">
+            <li><span class="cv-year">2015 &ndash; 2020</span><span>In charge of the major "Embedded Systems Engineering - Autonomous Vehicles"</span></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="cv-card">
+          <span class="cv-date">2006 &ndash; 2009</span>
+          <h3>Research Engineer</h3>
+          <p class="cv-org">IPSIS (IT Link Group)</p>
+        </div>
+      </li>
+    </ol>
+  </section>
 
-<h2>Education</h2>
-  <ul>
-    <li>2018 : HDR (Habilitation to Supervise Research) from University of Rouen Normandy.</li>
-    <li>2009 : PhD in Computer Vision from University of Rouen Normandy.</li>
-    <li>2006 : Research Master AG2I (Automation, Computer Sciences, Image processing), University of Lille.</li>
-    <li>2006 : Engineering Diploma, Ecole des Mines de Douai, Speciality Production, now IMT Nord Europe.</li>
-  </ul>
+  <section class="cv-section">
+    <h2>Education</h2>
+    <ol class="timeline">
+      <li>
+        <div class="cv-card">
+          <span class="cv-date">2018</span>
+          <h3>HDR (Habilitation to Supervise Research)</h3>
+          <p class="cv-org">University of Rouen Normandy</p>
+        </div>
+      </li>
+      <li>
+        <div class="cv-card">
+          <span class="cv-date">2009</span>
+          <h3>PhD in Computer Vision</h3>
+          <p class="cv-org">University of Rouen Normandy</p>
+        </div>
+      </li>
+      <li>
+        <div class="cv-card">
+          <span class="cv-date">2006</span>
+          <h3>Research Master AG2I</h3>
+          <p class="cv-org">Automation, Computer Sciences, Image processing &middot; University of Lille</p>
+        </div>
+      </li>
+      <li>
+        <div class="cv-card">
+          <span class="cv-date">2006</span>
+          <h3>Engineering Diploma</h3>
+          <p class="cv-org">Ecole des Mines de Douai (now IMT Nord Europe) &middot; Speciality Production</p>
+        </div>
+      </li>
+    </ol>
+  </section>
 
+</div>
   </main>
  
 <!-- Inclusion du footer -->
